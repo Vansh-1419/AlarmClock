@@ -1,0 +1,44 @@
+body {
+  background-color: rgb(77, 60, 91);
+  color: white;
+  height: 80vh;
+}
+.display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  margin: auto;
+  position: relative;
+  margin-top: 20vh;
+}
+.time {
+  display: flex;
+  flex-direction: row;
+  font-size: 20vh;
+}
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20vh;
+}
+.hide2 {
+  display: none;
+}
+.btn {
+  display: flex;
+  flex-direction: row;
+  width: 20vh;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vh;
+  margin-left: 15vh;
+  margin-right: 15vh;
+}
+.in {
+  width: 8vh;
+  height: 5vh;
+  text-align: center;
+}
