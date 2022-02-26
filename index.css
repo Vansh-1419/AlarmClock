@@ -42,3 +42,11 @@ body {
   height: 5vh;
   text-align: center;
 }
+.zone {
+  margin-left: 10h;
+  font-size: 5vh;
+  align-self: center;
+  justify-content: center;
+}
+
+::web ;
