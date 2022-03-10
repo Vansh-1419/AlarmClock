@@ -14,7 +14,7 @@
         <span class="sec">00</span> <span class="zone"></span>
       </div>
       <div class="button hide1">
-        <button class="btn start" onclick="st()">Start</button>
+        <button class="btn start" onclick="star()">Start</button>
 
         <div class="set">
           <select class="in" id="h">
@@ -159,19 +159,22 @@
             <option value="60">60</option>
           </select>
           <select class="in" id="zo">
-            <option value="0">AM</option>
-            <option value="1">PM</option>
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
           </select>
 
-          <button class="in setting" onclick="setstart()">Set</button>
+          <button class="in setting" onclick="set()">Set</button>
         </div>
-        <button class="btn stop">Stop</button>
+        <button class="btn stop" onclick="stop()">Stop</button>
       </div>
       <div class="button hide2">
         <button class="btn Dismiss">Dismiss</button>
         <button class="btn rseset">Reset</button>
       </div>
     </div>
+    <audio class="alarmsound">
+      <source src="sound.mp3" type=" audio/mpeg" />
+    </audio>
   </body>
   <script src="index.js"></script>
 </html>

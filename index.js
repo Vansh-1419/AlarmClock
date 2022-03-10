@@ -7,6 +7,10 @@ const sethours = document.querySelector("#h");
 const setminutes = document.querySelector("#m");
 const setseconds = document.querySelector("#s");
 const zone = document.querySelector(".zone");
+const sound = document.querySelector(".alarmsound");
+const setzone = document.querySelector("#zo");
+//sound
+const alarmSound = new Audio("sound.mp3");
 
 //Clock
 const clock = () => {
@@ -35,4 +39,36 @@ const checkTime = (i) => {
 };
 
 //Setting the alarm
-const settingAlarm = () => {};
+// const settingAlarm = () => {
+//   let selectedhours = sethours.value;
+//   let selectedminutes = setminutes.value;
+//   let selectedseconds = setseconds.value;
+
+let h = 0;
+let m = 0;
+let s = 0;
+let z = "AM";
+const set = () => {
+  h = sethours.value;
+  m = setminutes.value;
+  s = setseconds.value;
+  z = setzone.value;
+
+  console.log(h, m, s);
+  return h, m, s;
+};
+
+const star = () => {
+  while (
+    h == hours.textContent &&
+    m == minutes.textContent &&
+    s == sec.textContent &&
+    z == zone.textContent
+  ) {
+    sound.play();
+  }
+};
+
+const stop = () => {
+  sound.pause();
+};
